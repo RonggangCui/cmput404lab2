@@ -1,0 +1,14 @@
+Q1: 
+This is the way to init a socket and connect to a host and port
+s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+s.connect((host, port))
+
+Q2: A client socket send a request and receive a response
+    A server socket listens to requests and accept it and send a response
+
+Q3: We add socket.SO_REUSEADDR when we call setsockopt for the server socket
+Q4: We get a connection socket, and an address from the code: conn, addr = s.accept()
+Q5: We keep receiving data of 4096 packs until there are no more data to read
+Q6: https://github.com/RonggangCui/cmput404lab2.git
+
+Citation: I got help during the lab H01 from some TAs. https://github.com/aianta/cmput404-tcp-lab
